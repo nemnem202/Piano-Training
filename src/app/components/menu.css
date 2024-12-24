@@ -1,0 +1,108 @@
+.parameter {
+  border: 3px solid var(--background);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 1000;
+  color: var(--background);
+  margin-top: 10px;
+}
+
+.parameter:last-child {
+  border-radius: 5px 5px 12px 12px;
+}
+
+.parameter .notesList {
+  display: flex;
+  gap: 10px;
+  margin-top: 10;
+}
+
+.parameter .chordList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 10;
+}
+
+.mode {
+  display: flex;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 1000;
+  color: var(--background);
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  border: 3px solid var(--background);
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.item {
+  list-style: none;
+  margin: 0;
+  padding: 0 10;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid transparent;
+}
+.item:hover {
+  background-color: transparent;
+  color: var(--background);
+  border: 2px solid var(--background);
+}
+
+.item.active {
+  background-color: var(--background);
+  color: var(--color6);
+}
+
+.item.active:hover {
+  opacity: 0.8;
+}
+
+.item.chord {
+  width: 130px;
+}
+
+.theme1,
+.theme2,
+.theme3 {
+  width: 70px;
+  height: 25px;
+  border: 2px solid var(--background);
+  border-radius: 5px;
+}
+
+.theme1 {
+  background: var(--gradient1);
+}
+
+.theme2 {
+  background: var(--gradient2);
+}
+
+.theme3 {
+  background: var(--gradient3);
+}
+.theme1:hover,
+.theme2:hover,
+.theme3:hover {
+  opacity: 0.5;
+}

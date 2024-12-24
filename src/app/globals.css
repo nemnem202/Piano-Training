@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+.root-theme1 {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --color1: #248120;
+  --color2: rgb(126, 45, 255);
+  --color3: rgb(45, 0, 117);
+  --color4: #b4298a;
+  --color5: #ff3864;
+  --color6: white;
+  --color7: black;
+  --color8: red;
+  --color9: #aa2e8b;
+  --gradient: linear-gradient(45deg, #ff3864, #261447);
+  --gradient1: linear-gradient(45deg, #ff3864, #261447);
+  --gradient2: linear-gradient(45deg, #f08700, #00a6a6);
+  --gradient3: linear-gradient(45deg, #bfbccb, #784f41);
+}
+
+.root-theme2 {
+  --background: #dad4b3;
+  --foreground: #0a0a0a;
+  --color1: #248120;
+  --color2: rgb(153, 89, 255);
+  --color3: rgb(45, 0, 117);
+  --color4: #00c096;
+  --color5: #f08700;
+  --color6: black;
+  --color7: rgb(255, 229, 195);
+  --color8: rgb(255, 81, 0);
+  --color9: #27ac0d;
+  --gradient: linear-gradient(45deg, #f08700, #00a6a6);
+}
+
+.root-theme3 {
+  --background: #0a060e;
+  --foreground: #ededed;
+  --color1: #2aac25;
+  --color2: rgb(126, 45, 255);
+  --color3: rgb(45, 0, 117);
+
+  --color4: #946865;
+  --color5: #8197a3;
+
+  --color6: white;
+  --color7: black;
+
+  --color8: rgb(184, 27, 27);
+
+  --color9: #6b9699;
+
+  --gradient: linear-gradient(45deg, #bfbccb, #784f41);
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+header {
+  height: 5%;
+  background: var(--gradient);
+}
+
+.page {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 80;
+  margin-bottom: 80;
+}
+
+footer {
+  height: 10%;
+}
