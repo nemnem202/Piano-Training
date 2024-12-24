@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-export default nextConfig = {
+const nextConfig = {
   basePath: "/Piano-Training",
   output: "export",
   reactStrictMode: true,
 };
+
+export default nextConfig;
